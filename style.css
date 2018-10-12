@@ -1,3 +1,13 @@
 .item {
     list-style: none;
 }
+
+.item-box{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.info {
+    margin-right: 2.5rem;
+}
