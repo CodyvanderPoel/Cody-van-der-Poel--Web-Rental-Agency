@@ -29,7 +29,7 @@
         </div>
         <div class="items">
             <div>
-                <ul class="item-box row">
+                <ul id="items" class="item-box row">
                     <li class="item">
                         <a href="#">
                             <img class="cover" src="images/Red-Dead-Redemption-2.jpeg">
@@ -97,18 +97,18 @@
             </div>
         </div>
     </div>
-    <script id="items" type="text/x-template-handlebars">
-        <div>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img class="cover" src="{{image}}">
-                        <p class="title">{{name}}</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <!-- TEMPLATES ARE BELOW-->
+    <script id='stockTemplate' type='text/x-handlebars-template'>
+    <div id='template'>
+    <li>
+        <a href="#">
+            <img class="cover" src="{{image}}">
+            <p class="title">{{name}}</p>
+        </a>
+    </li>
+    </div>
     </script>
+
 </body>
 
 </html>
