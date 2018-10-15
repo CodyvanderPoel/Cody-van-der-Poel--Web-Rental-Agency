@@ -72,19 +72,26 @@
             </div>
             <div class="d-flex justify-content-center">
                 <form>
-                    Name:
-                    <input class="user-text"> </br>Email:
-                    <input class="user-text"> </br>Phone:
-                    <input class="user-text"> </br>Address:
-                    <input class="user-text"> </br>Payment:
-                    <button class="btn btn-primary">Payment Method
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item">Cash</a>
-                            <a class="dropdown-item">Check</a>
-                            <a class="dropdown-item">Card</a>
-                        </div>
-                    </button>
-                    <button class="btn btn-success">Submit</button>
+                    <fieldset>
+                        <label>Name:</br>
+                            <input required="required" class="user-text"> </br>Email:</br>
+                            <input required="required" type="email" class="user-text"> </br>Phone:</br>
+                            <input required="required" class="user-text"> </br>Address:</br>
+                            <input required="required" class="user-text"> </br>Payment:
+                            <div class="nav-item dropdown mr-4 mb-2">
+                                <a class="dropdown-toggle" type="button" data-toggle="dropdown" class="drop" href="#">
+                                    Payment Method
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Cash</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Check</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Card</a>
+                                </div>
+                            </div>
+                            <button class="mb-3 btn btn-success">Submit</button>
+                    </fieldset>
                 </form>
             </div>
         </div>
