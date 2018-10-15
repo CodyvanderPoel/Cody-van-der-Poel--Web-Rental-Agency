@@ -1,7 +1,7 @@
 .item {
     list-style: none;
     margin-right: 1.5rem;
-    margin-left: 1.5rem;
+    margin-left: 3rem;
     margin-top: 1.5rem;
     color: black;
 }
@@ -18,4 +18,8 @@
 .cover {
     height: 200px;
     width: 150px;
+}
+
+.title {
+    width:10rem;
 }
