@@ -27,94 +27,64 @@
         </div>
         <div class="items">
             <div class="d-flex justify-content-between">
-                <ul class="item-box">
+                <ul class="item-box row">
                     <li class="item">
-                        Red Dead Redemption 2
-                        <ul>
-                            <li class="info">
-                                Stock:5
-                            </li>
-                            <li class="info">
-                                Price: $25
-                            </li>
-                        </ul>
+                        <img class="cover" src="images/Red-Dead-Redemption-2.jpeg">
+                        <p class="title">Red Dead Redemption 2</p>
                     </li>
                     <li class="item">
-                        Fallout 76
-                        <ul>
-                            <li class="info">
-                                Stock:5
-                            </li>
-                            <li class="info">
-                                Price: $25
-                            </li>
-                        </ul>
+                        <img class="cover" src="images/220px-Fallout_76_cover.jpg">
+                        <p class="title">Fallout 76</p>
                     </li>
                     <li class="item">
-                        Monster Hunter: World
-                        <ul>
-                            <li class="info">
-                                Stock:5
-                            </li>
-                            <li class="info">
-                                Price: $20
-                            </li>
-                        </ul>
+                        <img class="cover" src="images/220px-Monster_Hunter_World_cover_art.jpg">
+                        <p class="title">Monster Hunter: World</p>
                     </li>
                 </ul>
-                <ul class="item-box">
+                <ul class="item-box row">
                     <li class="item">
-                        The Elder Scrolls: V Skyrim
-                        <ul>
-                            <li class="info">
-                                Stock:5
-                            </li>
-                            <li class="info">
-                                Price: $5
-                            </li>
-                        </ul>
+                        <img class="cover" src="images/skyrim.jpeg">
+                        <p class="title">The Elder Scrolls: V Skyrim</p>
                     </li>
                     <li class="item">
-                        Fallout 4
-                        <ul>
-                            <li class="info">
-                                Stock:5
-                            </li>
-                            <li class="info">
-                                Price: $10
-                            </li>
-                        </ul>
+                        <img class="cover" src="images/Fallout-4-cover-art.jpg">
+                        <p class="title">Fallout 4</p>
                     </li>
                     <li class="item">
-                        The Witcher 3: The Wild Hunt
-                        <ul>
-                            <li class="info">
-                                Stock:5
-                            </li>
-                            <li class="info">
-                                Price: $15
-                            </li>
-                        </ul>
+                        <img class="cover" src="images/220px-Witcher_3_cover_art.jpg">
+                        <p class="title">The Witcher 3: The Wild Hunt</p>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="d-flex justify-content-around">
-        <ul class="item-box">
-            <li class="item">
-                {{name}}
-                <ul>
-                    <li class="info">
-                        Stock:{{stock}}
-                    </li>
-                    <li class="info">
-                        Price: ${{price}}
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+    <script type="x-template-handlebars">
+        <div>
+            <ul>
+                <li>
+                    <img src="{{image}}">
+                    <p>{{name}}</p>
+                </li>
+            </ul>
+        </div>
+    </script>
+    <script type="x-template-handlebars">
+        <div class="d-flex justify-content-around">
+            <ul class="item-box">
+                <li class="item">
+                    {{ name }}
+                    <ul>
+                        <li class="info">
+                            Stock:{{ stock }}
+                        </li>
+                        <li class="info">
+                            Price: ${{ price }}
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </script>
 </body>
 
 </html>
