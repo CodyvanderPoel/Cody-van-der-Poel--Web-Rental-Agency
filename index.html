@@ -77,7 +77,9 @@
                         <label>Name:</br>
                             <input required="required" class="user-text"> </br>Email:</br>
                             <input required="required" type="email" class="user-text"> </br>Phone:</br>
-                            <input required="required" class="user-text"> </br>Address:</br>
+                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                required />
+                            <span class="validity"></span> </br>Address:</br>
                             <input required="required" class="user-text"> </br>Payment:
                             <div class="nav-item dropdown mr-4 mb-2">
                                 <a class="dropdown-toggle" type="button" data-toggle="dropdown" class="drop" href="#">
