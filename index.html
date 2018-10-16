@@ -19,7 +19,7 @@
     <!--The Handlebars JS-->
     <script src="handlebars/handlebars.js" defer></script>
     <!-- My custom js-->
-    <script type="text/javascript" defer></script>
+    <script type="text/javascript" src="javascript.js"defer></script>
 </head>
 
 <body>
@@ -29,45 +29,10 @@
         </div>
         <div class="items">
             <div>
-                <ul id="items" class="item-box row">
-                    <li class="item">
-                        <a href="#">
-                            <img class="cover" src="images/Red-Dead-Redemption-2.jpeg">
-                            <p class="title">Red Dead Redemption 2</p>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">
-                            <img class="cover" src="images/220px-Fallout_76_cover.jpg">
-                            <p class="title">Fallout 76</p>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">
-                            <img class="cover" src="images/220px-Monster_Hunter_World_cover_art.jpg">
-                            <p class="title">Monster Hunter: World</p>
-                        </a>
-                    </li>
+                <ul onload="renderItemSetOne()"id="item_set_1" class="item-box row">
                 </ul>
-                <ul class="item-box row">
-                    <li class="item">
-                        <a href="#">
-                            <img class="cover" src="images/skyrim.jpeg">
-                            <p class="title">The Elder Scrolls: V Skyrim</p>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">
-                            <img class="cover" src="images/Fallout-4-cover-art.jpg">
-                            <p class="title">Fallout 4</p>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">
-                            <img class="cover" src="images/220px-Witcher_3_cover_art.jpg">
-                            <p class="title">The Witcher 3: The Wild Hunt</p>
-                        </a>
-                    </li>
+                <ul onload="renderItemSetTwo()"id="item_set_2" class="item-box row">
+
                 </ul>
             </div>
             <div class="d-flex justify-content-center">
@@ -96,7 +61,7 @@
     <!-- TEMPLATES ARE BELOW-->
     <script id='stockTemplate' type='text/x-handlebars-template'>
     <div id='template'>
-    <li>
+    <li class="item">
         <a href="#">
             <img class="cover" src="{{image}}">
             <p class="title">{{name}}</p>
