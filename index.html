@@ -31,28 +31,29 @@
             <div>
                 <ul onload="renderItemSetOne()" id="item_set_1" class="item-box row">
                 </ul>
+                <p id="item_area_1"></p>
+                <p id="item_area_2"></p>
                 <ul onload="renderItemSetTwo()" id="item_set_2" class="item-box row">
-
                 </ul>
             </div>
             <div class="d-flex justify-content-center">
                 <form>
                     <fieldset>
                         <legend>Rental Contact</legend>
-                        <label>Name:</br>
-                            <input required="required" class="user" placeholder="Enter your name"> </br>Email:</br>
-                            <input required="required" type="email" class="user" placeholder="Enter your email"> </br>Phone:</br>
-                            <input type="tel" class="user" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                required />
-                            </br>Address:</br>
-                            <input required="required" class="user" placeholder="Enter your mailing address"> </br>Payment:
-                            <input type="radio" id="cash" class="user" name="payment" value="Cash" />
-                            <label for="cash">Cash</label>
-                            <input type="radio" id="check" class="user" name="payment" value="Check" />
-                            <label for="check">Check</label>
-                            <input type="radio" id="card" class="user" name="payment" value="Card" />
-                            <label for="card">Card</label></br>
-                            <button class="mb-3 btn btn-success">Submit</button>
+                        <label>Name:</label><br>
+                        <input required="required" class="user" placeholder="Enter your name"> <br>Email:<br>
+                        <input required="required" type="email" class="user" placeholder="Enter your email"> <br>Phone:<br>
+                        <input type="tel" class="user" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            required />
+                        <br>Address:<br>
+                        <input required="required" class="user" placeholder="Enter your mailing address"> <br>Payment:
+                        <input type="radio" id="cash" class="user" name="payment" value="Cash" />
+                        <label for="cash">Cash</label>
+                        <input type="radio" id="check" class="user" name="payment" value="Check" />
+                        <label for="check">Check</label>
+                        <input type="radio" id="card" class="user" name="payment" value="Card" />
+                        <label for="card">Card</label><br>
+                        <button class="mb-3 btn btn-success">Submit</button>
                     </fieldset>
                 </form>
             </div>
@@ -72,7 +73,7 @@
     <script id="infoTemplate" type="text/x-handlebars-template">
     <div id="template">
         <h3>{{name}}</h3>
-        <img src="{{image}}">
+        <img class="info_picture" src="{{image}}">
         <p>Stock:{{stock}}</p>
         <p>Price: ${{price}}</p>
     </div></script>
