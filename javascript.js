@@ -85,7 +85,7 @@ function renderItemInfoTwo() {
             price: data[game].price
         });
         document
-            .getElementById("item_area_2")
+            .getElementById("items")
             .insertAdjacentHTML("afterbegin", html);
     }
 }
@@ -106,7 +106,7 @@ function renderItemInfoOne() {
             price: data[game].price
         });
         document
-            .getElementById("item_area_1")
+            .getElementById("items")
             .insertAdjacentHTML("afterbegin", html);
     }
 }
