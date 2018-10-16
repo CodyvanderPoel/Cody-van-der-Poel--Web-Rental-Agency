@@ -81,18 +81,12 @@
                                 required />
                             </br>Address:</br>
                             <input required="required" class="user-text"> </br>Payment:
-                            <div class="nav-item dropdown mr-4 mb-2">
-                                <a class="dropdown-toggle" type="button" data-toggle="dropdown" class="drop" href="#">
-                                    Payment Method
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Cash</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Check</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Card</a>
-                                </div>
-                            </div>
+                            <input type="radio" id="cash" name="payment" value="Cash" />
+                            <label for="cash">Cash</label>
+                            <input type="radio" id="check" name="payment" value="Check" />
+                            <label for="check">Check</label>
+                            <input type="radio" id="card" name="payment" value="Card" />
+                            <label for="card">Card</label></br>
                             <button class="mb-3 btn btn-success">Submit</button>
                     </fieldset>
                 </form>
