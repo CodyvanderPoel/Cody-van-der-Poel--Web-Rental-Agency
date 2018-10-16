@@ -19,7 +19,7 @@
     <!--The Handlebars JS-->
     <script src="handlebars/handlebars.js" defer></script>
     <!-- My custom js-->
-    <script type="text/javascript" src="javascript.js"defer></script>
+    <script type="text/javascript" src="javascript.js" defer></script>
 </head>
 
 <body>
@@ -29,9 +29,9 @@
         </div>
         <div class="items">
             <div>
-                <ul onload="renderItemSetOne()"id="item_set_1" class="item-box row">
+                <ul onload="renderItemSetOne()" id="item_set_1" class="item-box row">
                 </ul>
-                <ul onload="renderItemSetTwo()"id="item_set_2" class="item-box row">
+                <ul onload="renderItemSetTwo()" id="item_set_2" class="item-box row">
 
                 </ul>
             </div>
@@ -59,8 +59,8 @@
         </div>
     </div>
     <!-- TEMPLATES ARE BELOW-->
-    <script id='stockTemplate' type='text/x-handlebars-template'>
-    <div id='template'>
+    <script id="stockTemplate" type="text/x-handlebars-template">
+    <div id="template">
     <li class="item">
         <a href="#">
             <img class="cover" src="{{image}}">
@@ -69,6 +69,13 @@
     </li>
     </div>
     </script>
+    <script id="infoTemplate" type="text/x-handlebars-template">
+    <div id="template">
+        <h3>{{name}}</h3>
+        <img src="{{image}}">
+        <p>Stock:{{stock}}</p>
+        <p>Price: ${{price}}</p>
+    </div></script>
 
 </body>
 
