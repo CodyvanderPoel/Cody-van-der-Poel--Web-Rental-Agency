@@ -1,5 +1,5 @@
 const PAGE_DATA = {
-    games: [
+    game_set_1: [
         {
             name: "Fallout 76",
             image: "images/220px-Fallout_76_cover.jpg",
@@ -17,7 +17,9 @@ const PAGE_DATA = {
             image: "images/220px-Monster_Hunter_World_cover_art.jpg",
             stock: 5,
             price: 20
-        },
+        }
+    ],
+    game_set_2: [
         {
             name: "The Elder Scrolls V: Skyrim",
             image: "images/skyrim.jpeg",
@@ -39,10 +41,10 @@ const PAGE_DATA = {
     ]
 };
 
-function renderItems() {
+function renderItemSetOne() {
     var source = document.getElementById("stockTemplate").innerHTML;
     var template = Handlebars.compile(source);
-    var data = PAGE_DATA.games;
+    var data = PAGE_DATA.game_set_1;
     for (game in data) {
         var html = template({
             name: data[game].name,
@@ -51,4 +53,18 @@ function renderItems() {
         document.getElementById("items").insertAdjacentHTML("afterbegin", html);
     }
 }
-renderItems();
+renderItemSetOne();
+
+function renderItemSetTwo() {
+    var source = document.getElementById("stockTemplate").innerHTML;
+    var template = Handlebars.compile(source);
+    var data = PAGE_DATA.game_set_2;
+    for (game in data) {
+        var html = template({
+            name: data[game].name,
+            image: data[game].image
+        });
+        document.getElementById("items").insertAdjacentHTML("afterbegin", html);
+    }
+}
+renderItemSetTwo();
