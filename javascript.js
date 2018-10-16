@@ -34,7 +34,7 @@ const PAGE_DATA = {
         },
         {
             name: "The Witcher 3: The Wild Hunt",
-            image: "images/220x-Witcher_3_cover_art.jpg",
+            image: "images/220px-Witcher_3_cover_art.jpg",
             stock: 5,
             price: 15
         }
@@ -50,7 +50,9 @@ function renderItemSetOne() {
             name: data[game].name,
             image: data[game].image
         });
-        document.getElementById("items").insertAdjacentHTML("afterbegin", html);
+        document
+            .getElementById("item_set_1")
+            .insertAdjacentHTML("afterbegin", html);
     }
 }
 renderItemSetOne();
@@ -64,7 +66,9 @@ function renderItemSetTwo() {
             name: data[game].name,
             image: data[game].image
         });
-        document.getElementById("items").insertAdjacentHTML("afterbegin", html);
+        document
+            .getElementById("item_set_2")
+            .insertAdjacentHTML("afterbegin", html);
     }
 }
 renderItemSetTwo();
