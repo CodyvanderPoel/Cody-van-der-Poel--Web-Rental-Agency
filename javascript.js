@@ -72,3 +72,45 @@ function renderItemSetTwo() {
     }
 }
 renderItemSetTwo();
+
+function renderItemInfoTwo() {
+    var source = document.getElementById("infoTemplate").innerHTML;
+    var template = Handlebars.compile(source);
+    var data = PAGE_DATA.game_set_2;
+    for (game in data) {
+        var html = template({
+            name: data[game].name,
+            image: data[game].image,
+            stock: data[game].stock,
+            price: data[game].price
+        });
+        document
+            .getElementById("item_area_2")
+            .insertAdjacentHTML("afterbegin", html);
+    }
+}
+
+document
+    .getElementById("item_set_2")
+    .addEventListener("click", renderItemInfoTwo);
+
+function renderItemInfoOne() {
+    var source = document.getElementById("infoTemplate").innerHTML;
+    var template = Handlebars.compile(source);
+    var data = PAGE_DATA.game_set_1;
+    for (game in data) {
+        var html = template({
+            name: data[game].name,
+            image: data[game].image,
+            stock: data[game].stock,
+            price: data[game].price
+        });
+        document
+            .getElementById("item_area_1")
+            .insertAdjacentHTML("afterbegin", html);
+    }
+}
+
+document
+    .getElementById("item_set_1")
+    .addEventListener("click", renderItemInfoOne);
