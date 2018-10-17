@@ -46,7 +46,7 @@
                             required />
                         <br>Address:<br>
                         <input required="required" class="user" placeholder="Enter your mailing address"> <br>Payment:
-                        <input type="radio" id="cash" class="user" name="payment" value="Cash" />
+                        <input type="radio" id="cash" class="user" name="payment" value="Cash" checked />
                         <label for="cash">Cash</label>
                         <input type="radio" id="check" class="user" name="payment" value="Check" />
                         <label for="check">Check</label>
@@ -60,22 +60,38 @@
     </div>
     <!-- TEMPLATES ARE BELOW-->
     <script id="stockTemplate" type="text/x-handlebars-template">
-    <div id="template">
+    <div>
     <li class="item">
         <a href="#">
             <img class="cover" src="{{image}}">
             <p class="title">{{name}}</p>
         </a>
+        <button type="button" class="btn" data-toggle="modal" data-target="{{id}}">Description
+        </button>
+        <div id="{{id}}" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">{{name}}</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                <img class="info_picture" src="{{image}}">
+                  <p>Description:{{description}}</p>
+                  <p>Stock:{{stock}}</p>
+                  <p>Price:{{price}}</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </li>
     </div>
     </script>
-    <script id="infoTemplate" type="text/x-handlebars-template">
-    <div id="template">
-        <h3>{{name}}</h3>
-        <img class="info_picture" src="{{image}}">
-        <p>Stock:{{stock}}</p>
-        <p>Price: ${{price}}</p>
-    </div></script>
 
 </body>
 
