@@ -70,7 +70,7 @@
             <img class="cover" src="{{image}}">
             <p class="title">{{name}}</p>
         </a>
-        <button type="button" class="btn" data-toggle="modal" data-target="{{id}}">Description
+        <button type="button" class="btn" data-toggle="modal" data-target="#{{id}}">Description
         </button>
         <div id="{{id}}" class="modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
@@ -85,7 +85,7 @@
                 <img class="info_picture" src="{{image}}">
                   <p>Description:{{description}}</p>
                   <p>Stock:{{stock}}</p>
-                  <p>Price:{{price}}</p>
+                  <p>Price:${{price}}</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
