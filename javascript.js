@@ -4,7 +4,7 @@ const PAGE_DATA = {
         {
             name: "Monster Hunter World",
             image: "images/220px-Monster_Hunter_World_cover_art.jpg",
-            stock: 5,
+            stock: 1,
             price: 20,
             id: "MHW",
             description:
@@ -13,7 +13,7 @@ const PAGE_DATA = {
         {
             name: "Fallout 76",
             image: "images/220px-Fallout_76_cover.jpg",
-            stock: 5,
+            stock: 1,
             price: 25,
             id: "F76",
             description:
@@ -22,7 +22,7 @@ const PAGE_DATA = {
         {
             name: "Red Dead Redemption 2",
             image: "images/Red-Dead-Redemption-2.jpeg",
-            stock: 5,
+            stock: 1,
             price: 25,
             id: "RDR2",
             description:
@@ -33,7 +33,7 @@ const PAGE_DATA = {
         {
             name: "The Witcher 3: The Wild Hunt",
             image: "images/220px-Witcher_3_cover_art.jpg",
-            stock: 5,
+            stock: 1,
             price: 15,
             id: "TW3TWH",
             description:
@@ -42,7 +42,7 @@ const PAGE_DATA = {
         {
             name: "Fallout 4",
             image: "images/Fallout-4-cover-art.jpg",
-            stock: 5,
+            stock: 1,
             price: 10,
             id: "F4",
             description:
@@ -51,7 +51,7 @@ const PAGE_DATA = {
         {
             name: "The Elder Scrolls V: Skyrim",
             image: "images/skyrim.jpeg",
-            stock: 5,
+            stock: 1,
             price: 5,
             id: "TESVS",
             description:
