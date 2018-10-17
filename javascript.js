@@ -1,3 +1,4 @@
+//ID's are assigned by acronyms of the names
 const PAGE_DATA = {
     game_set_1: [
         {
