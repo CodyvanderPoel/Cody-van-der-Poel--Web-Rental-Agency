@@ -24,7 +24,7 @@
 
 <body>
   <div class="container">
-    <div class="row">
+    <div class="d-flex justify-content-center">
       <h2>Welcome to Cody van der Poel's Game Rental</h2>
     </div>
     <div>
@@ -62,7 +62,7 @@
                   <p>Price:${{price}}</p>
                 </div>
                 <div class="modal-footer">
-                  <button data-dismiss="modal"class="btn btn-secondary" type="button" class="btn" data-toggle="modal" data-target="#rent">Rent
+                  <button data-dismiss="modal"class="btn btn-secondary" type="button" class="btn" value={{price}} data-toggle="modal" data-target="#rent">Rent
                   </button>
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
@@ -94,7 +94,7 @@
                             <input required="required" class="user" placeholder="Enter your city">
                             <br>State:<br>
                             <input required="required" class="user" placeholder="Enter your state"><br>Zip Code:<br>
-                            <input required="required" class="user" placeholder="Enter your zip code" pattern="[0-9]{5}"> <br>Payment:<br>
+                            <input required="required" class="user"maxlength='5' placeholder="Enter your zip code" pattern="[0-9]{5}"> <br>Payment:<br>
                             <input type="radio" id="cash" class="user" name="payment" value="Cash" checked />
                             <label for="cash">Cash</label>
                             <input type="radio" id="check" class="user" name="payment" value="Check" />
