@@ -41,7 +41,7 @@ const PAGE_DATA = {
         },
         {
             name: "Fallout 4",
-            image: "images/Fallout-4-cover-art.jpg",
+            image: "images/220px-Fallout_4_cover_art.jpg",
             stock: 1,
             price: 10,
             id: "F4",
@@ -50,7 +50,7 @@ const PAGE_DATA = {
         },
         {
             name: "The Elder Scrolls V: Skyrim",
-            image: "images/skyrim.jpeg",
+            image: "images/220px-Skyrim.jpeg",
             stock: 1,
             price: 5,
             id: "TESVS",
@@ -101,5 +101,5 @@ function renderItemSetTwo() {
 renderItemSetTwo();
 
 function submitMessage() {
-    alert("Thank you for renting this item!")
+    alert("Thank you for renting this item!");
 }
