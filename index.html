@@ -2,42 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rental Store</title>
-    <!-- The bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- The bootswatch theme -->
-    <link rel="stylesheet" href="theme.css">
-    <!-- My custom css -->
-    <link rel="stylesheet" href="style.css">
-    <!-- The bootstrap js -->
-    <script src="js/jquery.js" defer></script>
-    <script src="js/popper.js" defer></script>
-    <script src="js/bootstrap.js" defer></script>
-    <!--The Handlebars JS-->
-    <script src="handlebars/handlebars.js" defer></script>
-    <!-- My custom js-->
-    <script type="text/javascript" src="javascript.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rental Store</title>
+  <!-- The bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- The bootswatch theme -->
+  <link rel="stylesheet" href="theme.css">
+  <!-- My custom css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- The bootstrap js -->
+  <script src="js/jquery.js" defer></script>
+  <script src="js/popper.js" defer></script>
+  <script src="js/bootstrap.js" defer></script>
+  <!--The Handlebars JS-->
+  <script src="handlebars/handlebars.js" defer></script>
+  <!-- My custom js-->
+  <script type="text/javascript" src="javascript.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <h2>Welcome to Cody van der Poel's Game Rental</h2>
-        </div>
-        <div>
-            <div class="col-sm">
-                <ul id="item_set_1" class="border border-dark row">
-                </ul>
-                <ul id="item_set_2" class="border border-dark row">
-                </ul>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <h2>Welcome to Cody van der Poel's Game Rental</h2>
     </div>
-    <!-- TEMPLATES ARE BELOW-->
-    <script id="stockTemplate" type="text/x-handlebars-template">
+    <div>
+      <div class="col-sm">
+        <ul id="item_set_1" class="border border-dark row">
+        </ul>
+        <ul id="item_set_2" class="border border-dark row">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- TEMPLATES ARE BELOW-->
+  <script id="stockTemplate" type="text/x-handlebars-template">
     <div class="col-sm-4">
     <li class="item">
         <a href="#">
@@ -94,7 +94,7 @@
                             <input required="required" class="user" placeholder="Enter your city">
                             <br>State:<br>
                             <input required="required" class="user" placeholder="Enter your state"><br>Zip Code:<br>
-                            <input required="required" class="user" placeholder="Enter your zip code" pattern="[0-9]{5}"> <br>Payment:
+                            <input required="required" class="user" placeholder="Enter your zip code" pattern="[0-9]{5}"> <br>Payment:<br>
                             <input type="radio" id="cash" class="user" name="payment" value="Cash" checked />
                             <label for="cash">Cash</label>
                             <input type="radio" id="check" class="user" name="payment" value="Check" />
