@@ -99,3 +99,7 @@ function renderItemSetTwo() {
     }
 }
 renderItemSetTwo();
+
+function submitMessage() {
+    alert("Thank you for renting this item!")
+}
