@@ -46,7 +46,7 @@
         </a>
         <button type="button" class="btn" data-toggle="modal" data-target="#{{id}}">Description
         </button>
-        <div id="{{id}}" class="modal" tabindex="-1" role="dialog">
+        <div id="{{id}}" class="modal fade" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -62,15 +62,15 @@
                   <p>Price:${{price}}</p>
                 </div>
                 <div class="modal-footer">
+                  <button data-dismiss="modal"class="btn btn-secondary" type="button" class="btn" data-toggle="modal" data-target="#rent">Rent
+                  </button>
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
           </div>
           <br>
-          <button class="ml-4 mt-2 mb-2 btn"type="button" class="btn" data-toggle="modal" data-target="#rent">Rent
-            </button>
-            <div id="rent" class="modal" tabindex="-1" role="dialog">
+            <div id="rent" class="modal fade" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
