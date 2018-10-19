@@ -60,7 +60,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <div class="d-flex justify-content-center desc"><img class="info_picture" src="{{image}}"></div>
+                  <div class="d-flex justify-content-center"><img class="info_picture" src="{{image}}"></div>
                   <p>Description:<br>{{description}}</p>
                   <p>Stock:{{stock}}</p>
                   <p>Price:${{price}}</p>
@@ -92,7 +92,7 @@
                             <input required="required" class="user" placeholder="Enter your last name"><br>Email:<br>
                             <input required="required" type="email" class="user" placeholder="Enter your email"> <br>Phone:<br>
                             <input type="tel" class="user" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                            required /><br>Street Address:<br>
+                            required="required" /><br>Street Address:<br>
                             <input required="required" class="user" placeholder="Enter your street address">
                             <br>City:<br>
                             <input required="required" class="user" placeholder="Enter your city">
@@ -100,11 +100,11 @@
                             <input required="required" class="user" placeholder="Enter your state"><br>Zip Code:<br>
                             <input required="required" class="user"maxlength='5' placeholder="Enter your zip code" pattern="[0-9]{5}">
                             <br>Payment:<br>
-                            <input type="radio" id="cash" class="user" name="payment" value="Cash" checked />
+                            <input type="radio" id="cash" class="user" name="payment" value="Cash" checked/>
                             <label for="cash">Cash</label>
                             <input type="radio" id="check" class="user" name="payment" value="Check" />
                             <label for="check">Check</label>
-                            <input type="radio" id="card" class="user" name="payment" value="Card" />
+                            <input type="radio" id="card" class="user" name="payment" value="Card"/>
                             <label for="card">Card</label><br>Console:<br>
                             <input type="radio" id="playstation" class="user" name="console" value="Playstation" checked/>
                             <label for="playstation">Playstation 4</label>
