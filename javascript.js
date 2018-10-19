@@ -64,7 +64,7 @@ function renderItemSetOne() {
     var source = document.getElementById("stockTemplate").innerHTML;
     var template = Handlebars.compile(source);
     var data = PAGE_DATA.game_set_1;
-    for (game in data) {
+    for (var game in data) {
         var html = template(data[game]);
         document
             .getElementById("item_set_1")
@@ -77,7 +77,7 @@ function renderItemSetTwo() {
     var source = document.getElementById("stockTemplate").innerHTML;
     var template = Handlebars.compile(source);
     var data = PAGE_DATA.game_set_2;
-    for (game in data) {
+    for (var game in data) {
         var html = template(data[game]);
         document
             .getElementById("item_set_2")
