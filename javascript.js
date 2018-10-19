@@ -2,7 +2,7 @@
 const PAGE_DATA = {
     game_set_1: [
         {
-            name: "Monster Hunter World",
+            name: "Monster Hunter: World",
             image: "images/220px-Monster_Hunter_World_cover_art.jpg",
             stock: 1,
             price: 20,
