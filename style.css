@@ -1,8 +1,6 @@
 .item {
     list-style: none;
-    margin-right: 1.5rem;
-    margin-left: 3rem;
-    margin-top: 1.5rem;
+    margin: 0 4.5rem 0rem 4.5rem;
     color: black;
 }
 
