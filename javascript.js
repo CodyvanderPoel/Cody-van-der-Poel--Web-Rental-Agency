@@ -65,14 +65,7 @@ function renderItemSetOne() {
     var template = Handlebars.compile(source);
     var data = PAGE_DATA.game_set_1;
     for (game in data) {
-        var html = template({
-            name: data[game].name,
-            image: data[game].image,
-            stock: data[game].stock,
-            price: data[game].price,
-            id: data[game].id,
-            description: data[game].description
-        });
+        var html = template(data[game]);
         document
             .getElementById("item_set_1")
             .insertAdjacentHTML("afterbegin", html);
@@ -85,14 +78,7 @@ function renderItemSetTwo() {
     var template = Handlebars.compile(source);
     var data = PAGE_DATA.game_set_2;
     for (game in data) {
-        var html = template({
-            name: data[game].name,
-            image: data[game].image,
-            stock: data[game].stock,
-            price: data[game].price,
-            id: data[game].id,
-            description: data[game].description
-        });
+        var html = template(data[game]);
         document
             .getElementById("item_set_2")
             .insertAdjacentHTML("afterbegin", html);
@@ -103,3 +89,18 @@ renderItemSetTwo();
 function submitMessage() {
     alert("Thank you for renting this item!");
 }
+
+// function normalizeNumbers(n) {
+//     n.replace(/-/g, "");
+//     n = n.trim();
+//     return n;
+// }
+// function addDashes(f) {
+//     var num = normalizeNumbers(f);
+//     num.value =
+//         num.value.slice(0, 3) +
+//         "-" +
+//         num.value.slice(3, 6) +
+//         "-" +
+//         num.value.slice(6, 10);
+// }
