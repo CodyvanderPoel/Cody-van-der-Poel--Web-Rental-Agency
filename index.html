@@ -24,7 +24,7 @@
 
 <body>
   <div class="container">
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center" id="page-info" hidden="false">
       <h2>Welcome to Cody van der Poel's Game Rental</h2>
     </div>
     <div>
@@ -34,6 +34,9 @@
         <ul id="item_set_2" class="row">
         </ul>
       </div>
+    </div>
+    <div class="container" id="exit-page" hidden="true">
+      <h2>Thank you for renting with us today!</h2>
     </div>
   </div>
   <!-- TEMPLATES ARE BELOW-->
@@ -88,17 +91,17 @@
                       <form onsubmit="submitMessage()">
                         <fieldset>
                             First Name:<br>
-                            <input required="required" class="form-control" placeholder="Enter your first name"> <br> Last Name:<br>
-                            <input required="required" class="form-control" placeholder="Enter your last name"><br>Email:<br>
-                            <input required="required" type="email" class="form-control" placeholder="Enter your email"> <br>Phone:<br>
+                            <input required="required" class="form-control" id="fname"placeholder="Enter your first name"> <br> Last Name:<br>
+                            <input required="required" class="form-control" id="lname"placeholder="Enter your last name"><br>Email:<br>
+                            <input required="required" type="email" class="form-control" id="email"placeholder="Enter your email"> <br>Phone:<br>
                             <input type="tel" class="form-control" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                             required="required" /><br>Street Address:<br>
-                            <input required="required" class="form-control" placeholder="Enter your street address">
+                            <input required="required" class="form-control" id="address"placeholder="Enter your street address">
                             <br>City:<br>
-                            <input required="required" class="form-control" placeholder="Enter your city">
+                            <input required="required" class="form-control" id="city"placeholder="Enter your city">
                             <br>State:<br>
-                            <input required="required" class="form-control" placeholder="Enter your state"><br>Zip Code:<br>
-                            <input required="required" class="form-control"maxlength='5' placeholder="Enter your zip code" pattern="[0-9]{5}">
+                            <input required="required" class="form-control" id="State"placeholder="Enter your state"><br>Zip Code:<br>
+                            <input required="required" class="form-control" id="zip"maxlength='5' placeholder="Enter your zip code" pattern="[0-9]{5}">
                             <br>Payment:<br>
                             <input type="radio" id="cash" name="payment" value="Cash" checked/>
                             <label for="cash">Cash</label>
